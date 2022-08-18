@@ -132,7 +132,19 @@ class FoodCategorySeeder extends Seeder
            	'name' => 'rice'
             ],[
            	'id' => 40,
-           	'name' => 'pasta'
+           	'name' => 'pasta',
+            ],
+            [
+            'id'  => 41,
+            'name' => 'salad'
+            ],
+            [
+            'id' => 42,
+            'name' => 'butter/margarine'
+            ],
+            [
+            'id' => 43,
+            'name' => 'pizza mass'
             ]
         ]);
     }

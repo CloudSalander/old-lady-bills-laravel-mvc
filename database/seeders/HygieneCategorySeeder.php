@@ -35,6 +35,18 @@ class HygieneCategorySeeder extends Seeder
             ],[
            	'id' => 7,
            	'name' => 'others'
+            ],
+            [
+            'id' => 8,
+            'name' => 'kitchen paper'
+            ],
+            [
+                'id' => 9,
+                'name' => 'surgical mask'
+            ],
+            [
+                'id' => 10,
+                'name' => 'deodorant'
             ]
         ]);
     }

@@ -19,7 +19,10 @@ class DatabaseSeeder extends Seeder
             HygieneCategorySeeder::class,
             FoodCategorySeeder::class,
             ShopSeeder::class,
-            AddressSeeder::class
+            AddressSeeder::class,
+            BrandSeeder::class,
+            ProductSeeder::class,
+            ProductBrand::class
         ]);
     }
 }
