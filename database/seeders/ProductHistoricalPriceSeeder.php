@@ -39,8 +39,8 @@ class ProductHistoricalPriceSeeder extends Seeder
              'brand_id' => 1,
              'shop_id' => 2,
              'price' => 20.9,
-             'unit_type' => 'grams',
-             'units' => 1000,
+             'unit_type' => 'kilograms',
+             'units' => 1,
              'offer' => 0,
              'moment' => Carbon::create('2022', '07', '23')
 
@@ -69,8 +69,8 @@ class ProductHistoricalPriceSeeder extends Seeder
              'brand_id' => 4,
              'shop_id' => 3,
              'price' => 1.99,
-             'unit_type' => 'units',
-             'units' => 1,
+             'unit_type' => 'kilograms',
+             'units' => 0.150,
              'offer' => 0,
              'moment' => Carbon::create('2022', '08', '01')
 
@@ -109,8 +109,8 @@ class ProductHistoricalPriceSeeder extends Seeder
              'brand_id' => 1,
              'shop_id' => 4,
              'price' => 0.79,
-             'unit_type' => 'grams',
-             'units' => 1000,
+             'unit_type' => 'kilograms',
+             'units' => 1,
              'offer' => 0,
              'moment' => Carbon::create('2022', '08', '11')
 

@@ -25,7 +25,8 @@ class DatabaseSeeder extends Seeder
             ProductBrandSeeder::class,
             ProductBrandShopSeeder::class,
             ProductHistoricalPriceSeeder::class,
-            OrderSeeder::class
+            OrderSeeder::class,
+            OrderHasProductBrandShopSeeder::class
         ]);
     }
 }
