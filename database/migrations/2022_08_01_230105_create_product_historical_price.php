@@ -27,7 +27,7 @@ return new class extends Migration
             $table->foreign('shop_id')->references('shop_id')->on('product_brand_shop') 
                     ->onUpdate('cascade')
                     ->onDelete('cascade');
-            $table->enum('unit_type',['units','grams','liters']);
+            $table->enum('unit_type',['units','kilograms','liters']);
             $table->float('units',8,2);
             $table->boolean('offer')->default(0);
             $table->datetime('offer_expires')->nullable();
