@@ -4,9 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Carbon\Carbon;
 
-class OrderSeeder extends Seeder
+class OrdersHasProductBrandShopSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,7 +14,7 @@ class OrderSeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('order')->insert([
+        \DB::table('order_has_product_brand_shop')->insert([
             ['id' => 1,
             'moment' => Carbon::create('2022', '08', '01'),
             'created_at' => \DB::raw('CURRENT_TIMESTAMP'),
