@@ -64,7 +64,17 @@ class ShopSeeder extends Seeder
         	'type' => 'supermarket',
         	'created_at' => \DB::raw('CURRENT_TIMESTAMP'),
         	'updated_at' => \DB::raw('CURRENT_TIMESTAMP')
-        	]
+        	],
+            ['id' => 6,
+            'name' => 'Clarel Francesc Macià',
+            'url' => 'https://www.clarel.es/es/',
+            'phone' => '686 44 53 36',
+            'email' => '',
+            'online' => 1,
+            'type' => 'supermarket',
+            'created_at' => \DB::raw('CURRENT_TIMESTAMP'),
+            'updated_at' => \DB::raw('CURRENT_TIMESTAMP')
+            ]
 
         ]);
     }

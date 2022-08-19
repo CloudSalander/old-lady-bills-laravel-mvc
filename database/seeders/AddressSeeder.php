@@ -64,6 +64,16 @@ class AddressSeeder extends Seeder
         	'shop_id' => 5,
         	'created_at' => \DB::raw('CURRENT_TIMESTAMP'),
         	'updated_at' => \DB::raw('CURRENT_TIMESTAMP')
+           ],
+            ['id' => 6,
+            'street' => 'Avinguda Francesc Macià',
+            'number' => '23',
+            'zip' => '08921',
+            'city' => 'Santa Coloma de Gramenet',
+            'country' => 'Spain',
+            'shop_id' => 5,
+            'created_at' => \DB::raw('CURRENT_TIMESTAMP'),
+            'updated_at' => \DB::raw('CURRENT_TIMESTAMP')
            ]
 
         ]);

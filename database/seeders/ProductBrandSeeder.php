@@ -21,9 +21,6 @@ class ProductBrandSeeder extends Seeder
             ['product_id' => 15,
              'brand_id' => 3
             ],
-            ['product_id' => 14,
-             'brand_id' => 2
-            ],
             ['product_id' => 13,
              'brand_id' => 1
             ],
