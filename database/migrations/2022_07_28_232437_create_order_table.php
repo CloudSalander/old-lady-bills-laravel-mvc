@@ -19,6 +19,7 @@ return new class extends Migration
             $table->float('total');
             $table->text('comments')->nullable();
             $table->enum('pay_mode',['cash','card','paypal','others']);
+            $table->datetime('moment');
             $table->timestamps();
         });
     }

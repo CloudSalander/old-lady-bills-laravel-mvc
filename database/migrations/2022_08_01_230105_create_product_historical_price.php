@@ -14,6 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('product_historical_price', function (Blueprint $table) {
+            $table->id();
             $table->bigInteger('product_id')->unsigned()->constrained();
             $table->foreign('product_id')->references('product_id')->on('product_brand_shop') 
                     ->onUpdate('cascade')
@@ -26,8 +27,7 @@ return new class extends Migration
             $table->foreign('shop_id')->references('shop_id')->on('product_brand_shop') 
                     ->onUpdate('cascade')
                     ->onDelete('cascade');
-            $table->primary(['product_id', 'brand_id','shop_id']);
-            $table->enum('unit_type',['units','grams','liters']);
+            $table->enum('unit_type',['units','kilograms','liters']);
             $table->float('units',8,2);
             $table->boolean('offer')->default(0);
             $table->datetime('offer_expires')->nullable();

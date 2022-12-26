@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('product', function (Blueprint $table) {
             $table->id();
             $table->string('name',50);
-            $table->float('tax',3,2);
-            $table->text('comments');
+            $table->float('tax',8,2);
+            $table->text('comments')->nullable();
             $table->bigInteger('food_category_id')->unsigned()->nullable()->constrained();
             $table->foreign('food_category_id')->references('id')->on('food_category') 
                     ->onUpdate('restrict')
