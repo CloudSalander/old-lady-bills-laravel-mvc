@@ -13,7 +13,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        echo '<h1> '.get_class($this).' list </h1>';
     }
 
     /**
@@ -23,7 +23,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        echo '<h1> Create '.get_class($this).'</h1>';
     }
 
     /**
@@ -45,7 +45,7 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+        echo '<h1> Showing '.get_class($this).'number '.$id.'</h1>';
     }
 
     /**
@@ -56,7 +56,7 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        echo '<h1> Editing '.get_class($this).' number '.$id.'</h1>';
     }
 
     /**
