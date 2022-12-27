@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/brands',[BrandController::class,'index']);
+Route::post('brands/create',[BrandController::class,'store']);
+
