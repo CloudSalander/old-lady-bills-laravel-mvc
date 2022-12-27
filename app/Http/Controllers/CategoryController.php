@@ -13,7 +13,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        echo '<h1> Categories list </h1>';
     }
 
     /**
@@ -23,7 +23,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        echo '<h1> Create category </h1>';
     }
 
     /**
@@ -45,7 +45,7 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        //
+        echo '<h1> Showing category number '.$id.'</h1>';
     }
 
     /**
@@ -56,7 +56,7 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        echo '<h1> Editing category number '.$id.'</h1>';
     }
 
     /**

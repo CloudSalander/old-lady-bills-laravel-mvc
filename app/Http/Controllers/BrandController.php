@@ -13,7 +13,7 @@ class BrandController extends Controller
      */
     public function index()
     {
-        //
+        echo '<h1> Brands list </h1>';
     }
 
     /**
@@ -23,7 +23,7 @@ class BrandController extends Controller
      */
     public function create()
     {
-        //
+        echo '<h1> Create brand </h1>';
     }
 
     /**
@@ -45,7 +45,7 @@ class BrandController extends Controller
      */
     public function show($id)
     {
-        //
+        echo '<h1> Showing brand number '.$id.'</h1>';
     }
 
     /**
@@ -56,7 +56,7 @@ class BrandController extends Controller
      */
     public function edit($id)
     {
-        //
+        echo '<h1> Editing brand number '.$id.'</h1>';
     }
 
     /**
