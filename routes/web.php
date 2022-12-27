@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\ShopController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 
 
 /*
@@ -15,10 +19,12 @@ use App\Http\Controllers\BrandController;
 |
 */
 
-Route::get('/brands', [BrandController::class, 'index']);
-Route::get('/brands/create', [BrandController::class, 'create']);
-Route::get('/brands/{brand}', [BrandController::class, 'show']);
-Route::get('/brands/{brand}/edit', [BrandController::class, 'edit']);
+Route::resource('brands', BrandController::class);
+Route::resource('shops', ShopController::class);
+Route::resource('orders', OrderController::class);
+Route::resource('categories', CategoryController::class);
+Route::resource('products', ProductController::class);
+
 
 
 
